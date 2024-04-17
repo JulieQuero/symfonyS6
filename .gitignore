@@ -1,0 +1,36 @@
+###> MICROSERVICE ###
+###> symfony/framework-bundle ###
+/.env.local
+/.env.local.php
+/.env.*.local
+/microservice/config/secrets/prod/prod.decrypt.private.php
+/microservice/public/bundles/
+/microservice/var/
+/microservice/vendor/
+###< symfony/framework-bundle ###
+
+###> WEBSITE ###
+###> symfony/framework-bundle ###
+/.env.local
+/.env.local.php
+/.env.*.local
+/website/config/secrets/prod/prod.decrypt.private.php
+/website/public/bundles/
+/website/var/
+/website/vendor/
+###< symfony/framework-bundle ###
+
+###> phpunit/phpunit ###
+/website/phpunit.xml
+/website/.phpunit.result.cache
+###< phpunit/phpunit ###
+
+###> symfony/phpunit-bridge ###
+/website/.phpunit.result.cache
+/website/phpunit.xml
+###< symfony/phpunit-bridge ###
+
+###> symfony/asset-mapper ###
+/website/public/assets/
+/website/assets/vendor/
+###< symfony/asset-mapper ###
