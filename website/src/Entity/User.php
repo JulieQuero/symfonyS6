@@ -37,10 +37,10 @@ class User
     private ?\DateTimeImmutable $updated_at = null;
 
     #[ORM\ManyToOne]
-    private ?Subscription $subscription_id = null;
+    private ?Subscription $subscription = null;
 
     #[ORM\Column]
-    private ?\DateTimeImmutable $suscription_end_at = null;
+    private ?\DateTimeImmutable $subscription_end_at = null;
 
     /**
      * @var Collection<int, Pdf>
@@ -154,12 +154,12 @@ class User
         return $this;
     }
 
-    public function getSuscriptionEndAt(): ?\DateTimeImmutable
+    public function getSubscriptionEndAt(): ?\DateTimeImmutable
     {
         return $this->suscription_end_at;
     }
 
-    public function setSuscriptionEndAt(\DateTimeImmutable $suscription_end_at): static
+    public function setSubscriptionEndAt(\DateTimeImmutable $suscription_end_at): static
     {
         $this->suscription_end_at = $suscription_end_at;
 
