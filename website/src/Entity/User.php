@@ -37,7 +37,7 @@ class User
     private ?\DateTimeImmutable $updated_at = null;
 
     #[ORM\ManyToOne]
-    private ?Subscription $subscription = null;
+    private ?Subscription $subscription_id = null;
 
     #[ORM\Column]
     private ?\DateTimeImmutable $subscription_end_at = null;
@@ -156,12 +156,12 @@ class User
 
     public function getSubscriptionEndAt(): ?\DateTimeImmutable
     {
-        return $this->suscription_end_at;
+        return $this->subscription_end_at;
     }
 
-    public function setSubscriptionEndAt(\DateTimeImmutable $suscription_end_at): static
+    public function setSubscriptionEndAt(\DateTimeImmutable $subscription_end_at): static
     {
-        $this->suscription_end_at = $suscription_end_at;
+        $this->subscription_end_at = $subscription_end_at;
 
         return $this;
     }
